@@ -56,7 +56,7 @@ class Image
         }
         $src = $this->init($path);
         $dst = imagecreatetruecolor($newwidth, $newheight);
-        magecopyresampled($dst, $src, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
+        imagecopyresampled($dst, $src, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
         return $dst;
     }
 }
